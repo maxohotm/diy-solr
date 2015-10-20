@@ -14,29 +14,32 @@ function run_hook() {
 
 function start() {
     echo "Starting DIY cartridge"
-    #run_hook start
-${OPENSHIFT_DIY_SOLR_DIR}/bin/solr start -p 8984
+    run_hook start
+
+#${OPENSHIFT_DIY_SOLR_DIR}/bin/solr start -p 8984
 }
 
 function stop() {
     echo "Stopping DIY cartridge"
-    #run_hook stop
-${OPENSHIFT_DIY_SOLR_DIR}/bin/solr start -p 8984
+    run_hook stop
+    
+#${OPENSHIFT_DIY_SOLR_DIR}/bin/solr start -p 8984
 }
 
 function restart() {
-    #stop
-    #start
+    stop
+    start
 }
 
 function status() {
-   #if output=$(curl http://$OPENSHIFT_DIY_SOLR_IP:$OPENSHIFT_IY_SOLRE_PORT 2>&1 )
-   #then
-   #   client_result "Application is running"
-   #else
-   #   client_result "Application is either stopped or inaccessible"
-   #fi
-${OPENSHIFT_DIY_SOLR_DIR}/bin/solr restart -p 8984
+   if output=$(curl http://$OPENSHIFT_DIY_SOLR_IP:$OPENSHIFT_IY_SOLRE_PORT 2>&1 )
+   then
+      client_result "Application is running"
+   else
+      client_result "Application is either stopped or inaccessible"
+   fi
+   
+#${OPENSHIFT_DIY_SOLR_DIR}/bin/solr restart -p 8984
 }
 
 function reload() {
