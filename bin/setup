@@ -12,11 +12,11 @@ mkdir -p ${OPENSHIFT_DIY_SOLR_DIR}run
 
 
 echo "download solr"
-#wget http://apache.panu.it/lucene/solr/5.3.1/solr-5.3.1.tgz
-curl -O http://apache.panu.it/lucene/solr/5.3.1/solr-5.3.1.tgz
+wget ${OPENSHIFT_DATA_DIR}solr-5.3.1.tgz http://apache.panu.it/lucene/solr/5.3.1/solr-5.3.1.tgz
+#curl -O http://apache.panu.it/lucene/solr/5.3.1/solr-5.3.1.tgz
 
 echo "exstract solr"
-tar xvf solr-5.3.1.tgz --directory=${OPENSHIFT_DIY_SOLR_DIR}
+tar ${OPENSHIFT_DATA_DIR}solr-5.3.1.tgz -C ${OPENSHIFT_DATA_DIR}
 rm solr-5.3.1.tgz
 
 
