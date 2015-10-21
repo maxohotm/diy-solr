@@ -10,15 +10,11 @@ esac
 # Create additional directories required by the diy cartridge
 mkdir -p ${OPENSHIFT_DIY_SOLR_DIR}run
 
-client_result "gju"
-echo "download solr"
+client_result "prima setup"
 #wget ${OPENSHIFT_DATA_DIR}solr-5.3.1.tgz http://apache.panu.it/lucene/solr/5.3.1/solr-5.3.1.tgz
 #curl -O ${OPENSHIFT_DATA_DIR}solr-5.3.1.tgz http://apache.panu.it/lucene/solr/5.3.1/solr-5.3.1.tgz
 
-#echo "exstract solr"
 #tar -xvzf ${OPENSHIFT_DATA_DIR}solr-5.3.1.tgz -C ${OPENSHIFT_DATA_DIR}
 #rm solr-5.3.1.tgz
-
-
 
 client_result "Disclaimer: This is an experimental cartridge that provides a way to try unsupported languages, frameworks, and middleware on OpenShift."
