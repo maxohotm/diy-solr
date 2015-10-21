@@ -10,4 +10,5 @@ esac
 
 shopt -s dotglob
 
+client_result "env"
 export JAVA_HOME=$OPENSHIFT_DIY_SOLR_JDK7
