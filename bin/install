@@ -7,7 +7,6 @@ case "$1" in
     version="$2"
 esac
 
-
 shopt -s dotglob
 
 client_result "install"
