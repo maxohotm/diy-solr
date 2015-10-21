@@ -10,7 +10,7 @@ esac
 client_result "prima setup"
 
 
-env_dir="${OPENSHIFT_RUBY_DIR}/env"
+env_dir="${OPENSHIFT_DIY_SOLR_DIR}/env"
 set_env_var 'JAVA_HOME' '/etc/alternatives/java_sdk_1.7.0' $env_dir
 
 # Create additional directories required by the diy cartridge
