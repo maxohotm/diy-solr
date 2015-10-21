@@ -13,7 +13,7 @@ shopt -s dotglob
 client_result "secondo install"
 #export JAVA_HOME={$OPENSHIFT_DIY_SOLR_JDK7}
 
-export JAVA_HOME=/etc/alternatives/java_sdk_1.7.0
+#export JAVA_HOME=/etc/alternatives/java_sdk_1.7.0
 
 #add_domain_env_var "JENKINS_URL=https://${OPENSHIFT_GEAR_DNS}/"
 #add path

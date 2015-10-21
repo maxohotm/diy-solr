@@ -7,6 +7,9 @@ case "$1" in
     version="$2"
 esac
 
+
+export JAVA_HOME=/etc/alternatives/java_sdk_1.7.0
+
 # Create additional directories required by the diy cartridge
 mkdir -p ${OPENSHIFT_DIY_SOLR_DIR}run
 
